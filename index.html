@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>作业0120241227吴宇清</title>
+</head>
+<body>
+    <img id="myImage" onclick="changeImage()" src="image.gif" width="100" height="100">
+    <p>点击灯泡打开或关闭这盏灯</p>
+
+    <script>
+        function changeImage(){
+            console.log("点击事件调用函数")
+            const element = document.getElementById("myImage")
+            // console.log(element)
+            // console.log(typeof(element))
+            // console.log(elment.src.includes(image.gif))
+
+            if (element.src.includes("image.gif")){
+                element.src = "image2.gif"
+                console.log("关灯")
+            }else{
+                element.src = "image.gif"
+                console.log("开灯")
+            }
+
+
+        }
+    </script>
+</body>
+</html>
